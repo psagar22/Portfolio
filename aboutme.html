@@ -7,31 +7,6 @@
         border:5px solid black;
         background-color: black;
       }
-      .button {
-    background-color: #49F5D1; /* mintgreen */
-    border: none;
-    color: black;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-      }
-
-      .button1 {
-        background-color: black;
-        color: #49F5D1
-        border: 2px solid #010101
-      }
-
-      .button1:hover {
-          background-color: #FEFEFF
-          color:#183EB1
-      }
     </style>
     <script>
       function zoom(x) {
@@ -48,9 +23,8 @@
   <body style="background-color:rgb(43, 255, 200)">
   <div id="para">
     <h1 style="text-align:center;font-family:Trebuchet MS; color:rgb(43, 255, 200)">Priya Sagar</h1>
-    
-    <p style="text-align:center;font-family:Trebuchet MS; color:rgb(43, 255, 200);">A student from New York City</p>
-
+    <p id="demo" style="display:none" style="text-align:center;font-family:Trebuchet MS; color:rgb(43, 255, 200);">A student from New York City</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
   </div>
   <script>
   window.alert("Hello! Welcome to my website!")
